@@ -14,11 +14,14 @@ import Track from '../Track/Track';
 
                 {
 
-                    //this.props.tracks.map(track => {
+                    this.props.tracks.map(track => {
 
-                        //return <Track track={track}
+                        return <Track track={track}
+                                      onAdd={this.props.onAdd}
+                                      onRemove={this.props.onRemove}
+                                      isRemoval={true}
 
-                    //key={track.id} />
+                                      key={track.id} />
 
                     })
                 }
